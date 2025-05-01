@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F9">
+
+    <TextView
+        android:id="@+id/tvHeaderDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#673AB7"
+        android:text="Biografi Mahasiswa"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:padding="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivFoto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_image"
+        app:layout_constraintTop_toBottomOf="@id/tvHeaderDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvNamaDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:textSize="16sp"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/ivFoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvNimDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="NIM"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvNamaDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvProdiDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Program Studi"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvNimDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvTtl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tempat, Tanggal Lahir"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvProdiDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPendidikan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Pendidikan Terakhir"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTtl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvMinat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Minat"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvPendidikan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvOrganisasi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Organisasi"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvMinat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvTujuan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tujuan Hidup"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvOrganisasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
